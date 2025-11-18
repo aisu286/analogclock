@@ -1,0 +1,8 @@
+{
+  "tasks": {
+    "dev": "deno run -A main.ts"
+  },
+  "imports": {
+    "@std/http/file_server": "https://deno.land/std@0.194.0/http/file_server.ts"
+  }
+}

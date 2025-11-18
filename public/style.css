@@ -1,0 +1,56 @@
+:root {
+  --clock-size: 1024px;
+  --drop-shadow: drop-shadow(0 8px 8px rgba(0, 0, 0, 0.5));
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#flexible-container-1080p-land {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  background-image: url(./image/bgi.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #000 !important;
+}
+
+#clock {
+  width: var(--clock-size);
+  height: var(--clock-size);
+  background-image: url(./image/ring.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+}
+
+#hands {
+  width: var(--clock-size);
+  height: var(--clock-size);
+  filter: var(--drop-shadow);
+}
+
+#long {
+  position: absolute;
+  width: var(--clock-size);
+  height: var(--clock-size);
+  background-image: url(./image/long.png);
+  background-size: cover;
+}
+
+#short {  
+  position: absolute;
+  width: var(--clock-size);
+  height: var(--clock-size);
+  background-image: url(./image/short.png);
+  background-size: cover;
+}
