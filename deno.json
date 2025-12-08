@@ -1,8 +1,10 @@
 {
   "tasks": {
-    "dev": "deno run -A main.ts"
+    "dev": "deno run -A main.ts",
+    "test": "deno test -A"
   },
   "imports": {
-    "@std/http/file_server": "https://deno.land/std@0.194.0/http/file_server.ts"
+    "@std/http/file_server": "https://deno.land/std@0.194.0/http/file_server.ts",
+    "@std/assert":"jsr:@std/assert@1"
   }
 }

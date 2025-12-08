@@ -3,7 +3,7 @@ const body = document.querySelector('body')
 const longDOM = document.querySelector('#long')
 const shortDOM = document.querySelector('#short')
 
-class Long {
+export class Long {
   constructor(element) {
     this.element = element
     this.angle = 0
@@ -14,7 +14,7 @@ class Long {
   }
 }
 
-class Short {
+export class Short {
   constructor(element) {
     this.element = element
     this.angle = 0
@@ -40,3 +40,13 @@ globalThis.setInterval(() => {
 body.onclick = () => {
   body.requestFullscreen();
 }
+
+
+function setBg(){
+  const bg = document.querySelector("#flexible-container-1080p-land")
+  const img = globalThis.location.href.split("#")[1];
+  if(img){
+    bg.style.backgroundImage = `url(./image/${img}.png)`
+  }
+}
+setBg();
