@@ -50,3 +50,9 @@ function setBg(){
   }
 }
 setBg();
+
+const restDOM = document.querySelector("#rest")
+const optionDOM = document.querySelector("#option")
+optionDOM.onclick = () => {
+  restDOM.classList.toggle("hide")
+}
